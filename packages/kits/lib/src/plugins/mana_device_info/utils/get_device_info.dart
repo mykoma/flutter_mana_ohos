@@ -30,6 +30,9 @@ Future<Map<String, dynamic>> getDeviceInfo() async {
         TargetPlatform.fuchsia => <String, dynamic>{
           'Error:': 'Fuchsia platform isn\'t supported',
         },
+        TargetPlatform.ohos => <String, dynamic>{
+          'Error:': 'Harmony platform isn\'t supported',
+        },
       };
     }
   } on PlatformException {
